@@ -1,4 +1,4 @@
-# angularInterview
+# Angular Interview - Notes
 
 1. What is Angular Module:
    
