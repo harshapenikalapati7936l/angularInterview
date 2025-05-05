@@ -2,7 +2,9 @@
 
 # 1. What is Angular Module:
    
-Angular module is a building block of an angular app. A module will have collection of components, directives, services, pipes etc . Usually a module refers to a independent   functionality inside the app. For example, if we are buidling app for restruant then we can divide the below as modules
+An Angular module is a class marked with the @NgModule decorator that groups together related code:
+
+A module will have collection of components, directives, services, pipes etc . Usually a module refers to a independent   functionality inside the app. For example, if we are buidling app for restruant then we can divide the below as modules
     Menu, Cart, Today specials etc. 
 Advantages of module - Modualrity of the code, easy to maintain, as angular supports lazy loading of modules it will help the app to load faster. If we have common code to be shared accross the application , we can have module for common components, services, directives etc. Then this module can be used as dependency in other modules.
 To make a class as a module we can use @NgModule decorator and this decorator takes the below object.
