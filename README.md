@@ -1,6 +1,6 @@
 # Angular Interview - Notes
 
-1. What is Angular Module:
+# 1. What is Angular Module:
    
 Angular module is a building block of an angular app. A module will have collection of components, directives, services, pipes etc . Usually a module refers to a independent   functionality inside the app. For example, if we are buidling app for restruant then we can divide the below as modules
     Menu, Cart, Today specials etc. 
