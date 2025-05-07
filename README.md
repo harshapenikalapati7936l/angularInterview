@@ -1,18 +1,11 @@
 # Angular Interview - Notes
 
 # 1. What is Angular Module:
-   
-An Angular module is a class marked with the @NgModule decorator that groups together related code:
+An Angular module is a container that groups related components, directives, pipes, and services. It helps organize the application into cohesive blocks and manages dependencies. Every Angular app has at least one root module (AppModule), and you can create feature modules to keep code modular and maintainable.
+After angular 14 we can have an app without a module instead you can have standalone component and bootstrap the component . A standalone component is not tied to any module and you can use this component anywhere in the applicaiton by just importing it. The below are the metadata required to create a module
+1. declarations - list of components, services, pipes, directives comes under this module
+2. import - list of depencies needed to run this module which will be imported from another modules either modules of the application or external modules like RoutModuel, FormsModule, BrowserModule etc
+3. export - list of the components, services, etc which can be exported from the module
+4. bootstrap - will have the details of the component which can be used to launch this module, this component will be the starting point for this module
+5. providers - the array will have the list of services will be required to inject when needed.
 
-A module will have collection of components, directives, services, pipes etc . Usually a module refers to a independent   functionality inside the app. For example, if we are buidling app for restruant then we can divide the below as modules
-    Menu, Cart, Today specials etc. 
-Advantages of module - Modualrity of the code, easy to maintain, as angular supports lazy loading of modules it will help the app to load faster. If we have common code to be shared accross the application , we can have module for common components, services, directives etc. Then this module can be used as dependency in other modules.
-To make a class as a module we can use @NgModule decorator and this decorator takes the below object.
-
-@Ngmodule({
-  'declarations', - this is in array takes list of all the components created under this module
-  'providers' - this is in array which will take the list of the services,pipes needed for this module
-  'imports' - this is in array which will take the list of depencies needed for this module from other module
-  'exports' - this is in array which will have the list of components, services, pipes etc which will be exported so that other modules can use it
-  'bootstrap' - this is in array which will take the one component which needs to be intiiliaed when the module loads
-})
