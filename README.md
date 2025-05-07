@@ -24,6 +24,6 @@ These are plain typescript files created with @Injectable decorator, has common/
 @Injectable({
 provideIn: 'root'
 })
-when we provideIn root then you can directly use in any component. If you 
+when we provideIn root then you can directly use in any component. If you want to use for module or componnet specific then declare in providers array
 
 
