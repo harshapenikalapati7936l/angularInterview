@@ -20,4 +20,3 @@ A component is defined using the @Component decorator and consists of:
 Before Angular 14, every component had to be part of an Angular module. From Angular 14 onward, standalone components can be created without needing to be declared in a module, making them more reusable and lightweight.
 
 
-
