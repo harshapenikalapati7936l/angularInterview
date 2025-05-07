@@ -24,6 +24,7 @@ These are plain typescript files created with @Injectable decorator, has common/
 @Injectable({
 provideIn: 'root'
 })
-when we provideIn root then you can directly use in any component. If you want to use for module or componnet specific then declare in providers array
+when we provideIn root then you can directly use in any component. If you want to use for module or componnet specific then declare in providers array.
+If a service is provided both in 'root' and in a component's providers, Angular uses the component-scoped instance within that component and its subtree, effectively overriding the global singleton.
 
 
