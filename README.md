@@ -9,7 +9,7 @@ After angular 14 we can have an app without a module instead you can have standa
 4. bootstrap - will have the details of the component which can be used to launch this module, this component will be the starting point for this module
 5. providers - the array will have the list of services will be required to inject when needed.
 
-#2. What are angular components:
+# 2. What are angular components:
 An angular component is one of the building block or key element in angular app. A component refers to controlling one part/section of the application. These are used for human interatctions and displaying the content. In Angular you can create a component by using the @Component decorator in a class file. The component will have the below main parts
 1. templateUrl or template
 2. styleUrls
