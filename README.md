@@ -12,10 +12,10 @@ After angular 14 we can have an app without a module instead you can have standa
 # 2. What are angular components:
 An Angular component is a key building block in an Angular application. It controls one specific part or section of the UI. Components handle user interactions, display data, and contain logic to control that part of the application.
 A component is defined using the @Component decorator and consists of:
-selector: the HTML tag used to insert this component
-template or templateUrl: defines the HTML structure
-styleUrls: contains CSS or styling info
-A TypeScript class for component logic
+1. selector: the HTML tag used to insert this component
+2. template or templateUrl: defines the HTML structure
+3. styleUrls: contains CSS or styling info
+4. A TypeScript class for component logic
 
 Before Angular 14, every component had to be part of an Angular module. From Angular 14 onward, standalone components can be created without needing to be declared in a module, making them more reusable and lightweight.
 
